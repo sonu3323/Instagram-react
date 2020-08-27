@@ -1,38 +1,68 @@
+* {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  background: #fdfefe;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__loginLogo {
+  object-fit: contain;
+  width: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__header {
+  background: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header__button {
+  margin-top: 1% !important;
+  display: flex;
+}
+
+.app__headerImage {
+  object-fit: contain;
+  width: 200px;
+  padding: 10px;
+}
+
+.login {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 30px 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.dialog__input {
+  width: 200px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__posts {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app__postright {
+  margin-left: 20px;
+}
+
+@media (max-width: 550px) {
+  .app__postright {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app__headerImage {
+    object-fit: contain;
+    width: 100px;
+    padding: 10px;
   }
+}
+
+.imageNotUpload {
+  text-align: center !important;
 }
